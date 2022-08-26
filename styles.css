@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: #121417;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------ Rating state start ------- */
+.rating{
+    width: 375px;
+    padding: 25px;
+    margin-top: 100px;
+    background-color: #252d37;
+    border-radius: 9px;
+}
+.star--icon{
+    background-color: rgb(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    font-size: 23px;
+    color: white;
+    margin: 15px 0;
+}
+.rating--request{
+    font-size: 15px;
+    color: #7c8798;
+}
+.all--ratings{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 20px 0;
+}
+.rating--value{
+    color: #959eac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+input[type="radio"]{
+    background-color: rgb(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+input[type="radio"]::before{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fb7413;
+}
+input[type="radio"]:hover{
+    background-color: #959eac;
+    color: white;
+}
+input[type="radio"]:focus{
+    background-color: #fb7413;
+}
+input[type="radio"]:checked + span{
+    color: white;
+}
+.rating--value span{
+    position: absolute;
+}
+.rating--value:hover{
+    color: white;
+}
+button{
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fb7413;
+    border-style: none;
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+}
+button:hover{
+    background-color: white;
+    color: #fb7413;
+}
+/* -------- Rating state end ----- */
+
+/* ------ Thank you state start ----- */
+.thanks--state{
+    width: 375px;
+    padding: 25px;
+    margin-top: 50px;
+    background-color: #252d37;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.selected{
+    background-color: rgb(124, 135, 152, 0.4);
+    color: #fb7413;
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 8px 12px;
+    margin: 20px 0;
+}
+.no--display{
+    display: none;
+}
+
+/* ----- footer ------ */
+.attribution{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(57, 59%, 66%);
+    margin-left: 3px; 
+}
+.attribution svg{
+    margin: 0 3px;
+}
