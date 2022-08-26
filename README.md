@@ -47,8 +47,6 @@ https://interactive-rating-767cc.web.app
 
 Forms are an essential part and make things easier since most things are already done for you. My biggest lesson was on customizing radio buttons using css; here's some css snippet
 
-To see how you can add code snippets, see below:
-
 ```css
 input[type="radio"] {
   background-color: rgb(255, 255, 255, 0.1);
