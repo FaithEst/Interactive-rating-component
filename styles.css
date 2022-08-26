@@ -60,12 +60,6 @@ input[type="radio"]{
     -webkit-appearance: none;
     appearance: none;
 }
-input[type="radio"]::before{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #fb7413;
-}
 input[type="radio"]:hover{
     background-color: #959eac;
     color: white;
